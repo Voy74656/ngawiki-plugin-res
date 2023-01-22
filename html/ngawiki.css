@@ -1,0 +1,114 @@
+:root {
+  --control-text-color: #777;
+  --c-regular: #171717;
+  --c-thin: #6b6b6b;
+  --c-thinner: #717171;
+  --c-dark: #000000;
+}
+
+
+@font-face {
+  font-family: 'Genshin';
+  font-weight: bold;
+  src: url('../font/Genshin-default-fonts-85w.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Genshin';
+  font-weight: normal;
+  src: url('../font/Genshin-default-fonts-65w.woff2') format('woff2');
+}
+
+
+
+html {
+  font-size: 20px;
+  /* padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px; */
+  /* margin-block-start: 20px;
+  margin-block-end: 20px; */
+  background-size: cover;
+}
+
+body {
+  font-family: "Genshin";
+  color: rgb(51, 51, 51);
+  line-height: 1.6;
+
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 15px;
+  text-align: center;
+  font-family: "Genshin";
+  font-weight: bold;
+  color: var(--c-dark);
+}
+
+h2 {
+  font-size: 1.4em;
+  text-indent: 0.3em;
+  background-color: var(--c-dark);
+  color: #fafafa;
+  font-family: "Genshin";
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.3em;
+  line-height: 10px;
+  border-left: 6px solid var(--c-dark);
+  font-family: "Genshin";
+  font-weight: bold;
+  text-indent: 0.3em;
+  color: var(--c-dark);
+}
+
+p {
+  margin-block-start: 12px;
+  margin-block-end: 12px;
+}
+
+/*for pandoc export result*/
+blockquote {
+  border-left: 4px solid var(--c-dark);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  background-color: var(--c-thinner);
+  color: #363636;
+  line-height: 30px;
+  font-family: "Genshin";
+  /* font-weight: normal; */
+  text-justify: distribute-all-lines;
+
+}
+
+li {
+  /* font-weight:bold; */
+  line-height: 20px;
+
+}
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+blockquote>strong {
+  background-color: var(--accentcolor);
+  color: #fafafa;
+  font-family: "Genshin";
+  /* font-weight: bold; */
+}
+
+.logo {
+  text-align: center;
+  font-size: 14px;
+  color: rgb(28, 26, 26);
+  /* color: #BD7E6D; */
+  font-family: 'tttgbnumber';
+}

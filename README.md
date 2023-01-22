@@ -1,0 +1,1 @@
+# ngawiki-res
