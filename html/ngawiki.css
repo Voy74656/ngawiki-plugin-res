@@ -1,9 +1,11 @@
 :root {
-  --control-text-color: #777;
-  --c-regular: #171717;
-  --c-thin: #6b6b6b;
-  --c-thinner: #717171;
-  --c-dark: #000000;
+  --cc-regular: #44546A;
+  --cc-01: #D6DCE5; 
+  --cc-02: #ADB9CA; 
+  --cc-03: #8497B0; 
+  --cc-p:  #333F50; 
+  --cc-pp: #222A35;
+  --cc-text:#000000;
 }
 
 
@@ -19,22 +21,18 @@
   src: url('../font/Genshin-default-fonts-65w.woff2') format('woff2');
 }
 
-
-
 html {
   font-size: 20px;
-  /* padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px; */
-  /* margin-block-start: 20px;
-  margin-block-end: 20px; */
-  background-size: cover;
+  padding: 10px;
+  font-family:"Genshin";
+  /* background-size: cover; */
 }
 
 body {
-  font-family: "Genshin";
-  color: rgb(51, 51, 51);
+  font-family: "Genshin", ;
+  /* color: rgb(51, 51, 51); */
   line-height: 1.6;
+  color: var(--cc-pp);
 
 }
 
@@ -42,15 +40,15 @@ h1 {
   font-size: 2.5em;
   line-height: 15px;
   text-align: center;
-  font-family: "Genshin";
+  /* font-family: "Genshin"; */
   font-weight: bold;
-  color: var(--c-dark);
+  color: var(--cc-regular);
 }
 
 h2 {
   font-size: 1.4em;
   text-indent: 0.3em;
-  background-color: var(--c-dark);
+  background-color: var(--cc-regular);
   color: #fafafa;
   font-family: "Genshin";
   font-weight: bold;
@@ -59,38 +57,40 @@ h2 {
 h3 {
   font-size: 1.3em;
   line-height: 10px;
-  border-left: 6px solid var(--c-dark);
+  border-left: 4px solid var(--cc-pp);
   font-family: "Genshin";
   font-weight: bold;
   text-indent: 0.3em;
-  color: var(--c-dark);
-}
-
-p {
-  margin-block-start: 12px;
-  margin-block-end: 12px;
+  color: var(--cc-p);
 }
 
 /*for pandoc export result*/
 blockquote {
-  border-left: 4px solid var(--c-dark);
+  border-left: 4px solid var(--cc-pp);
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
-  background-color: var(--c-thinner);
-  color: #363636;
-  line-height: 30px;
+  margin-left: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: var(--cc-01);
   font-family: "Genshin";
-  /* font-weight: normal; */
-  text-justify: distribute-all-lines;
+  font-weight: normal;
+  
+  color: var(--cc-text);
+  line-height: 24px;
+  text-justify: distribute;
 
 }
 
-li {
-  /* font-weight:bold; */
-  line-height: 20px;
+blockquote>li{
+  color: var(--cc-text);
+  line-height: 24px;
+  text-justify: distribute;
+}
 
+li {
+  line-height: 24px;
+  color:var(--cc-text);
 }
 
 ul {
@@ -98,17 +98,32 @@ ul {
   margin-block-end: 0;
 }
 
-blockquote>strong {
-  background-color: var(--accentcolor);
-  color: #fafafa;
-  font-family: "Genshin";
-  /* font-weight: bold; */
-}
 
 .logo {
   text-align: center;
-  font-size: 14px;
-  color: rgb(28, 26, 26);
+  font-size: 1em;
+  color: var(--cc-regular);
   /* color: #BD7E6D; */
-  font-family: 'tttgbnumber';
+  /* font-family: 'tttgbnumber'; */
+}
+
+strong{
+  color: var(--cc-p);
+  font-family: "Genshin";
+  font-weight: bold;
+}
+
+blockquote>strong{
+  color: var(--cc-p);
+  font-family: "Genshin";
+  font-weight: bold;
+  display:inline
+
+}
+
+p{
+  margin-block-end: 5px;
+  margin-block-start: 5px;
+  margin-left: 0;
+  line-height: normal;
 }
