@@ -134,6 +134,8 @@ table {
   font-size: 0.8em;
   word-break: initial;
   border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
 }
 table tr {
   border-top: 1px solid #dfe2e5;
