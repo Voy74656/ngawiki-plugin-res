@@ -25,6 +25,7 @@ html {
   font-size: 20px;
   padding: 10px;
   font-family:"Genshin";
+  background-color: var(--cc-01);
   /* background-size: cover; */
 }
 
@@ -72,7 +73,7 @@ blockquote {
   margin-left: 15px;
   padding-top: 3px;
   padding-bottom: 3px;
-  background-color: var(--cc-01);
+  background-color: var(--cc-02);
   font-family: "Genshin";
   font-weight: normal;
   
@@ -126,4 +127,40 @@ p{
   margin-block-start: 5px;
   margin-left: 0;
   line-height: normal;
+}
+
+table {
+  padding: 0;
+  font-size: 0.8em;
+  word-break: initial;
+  border-collapse: collapse;
+}
+table tr {
+  border-top: 1px solid #dfe2e5;
+  margin: 0;
+  padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+  background-color: var(--cc-03);
+}
+table th {
+  font-weight: bold;
+  border: 1px solid var(--cc-pp);
+  border-bottom: 0;
+  margin: 0;
+  padding: 6px 13px;
+}
+table td {
+  border: 1px solid var(--cc-pp);
+  margin: 0;
+  padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+  margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+  margin-bottom: 0;
 }
