@@ -1,6 +1,6 @@
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta name="viewport" content="width=800px, initial-scale=1.0, user-scalable=yes" />
     <title>NGA攻略</title>
     <link rel="stylesheet" href="{{pluResPath}}html/ngawiki.css" />
     <script type="text/javascript" src="{{pluResPath}}/html/setColorGroup.js"> </script>
@@ -19,6 +19,21 @@
 <div>
     {{@Markdown}}
 </div>
+
+<script type="text/javascript">
+    function imgError(){
+        document.getElementById("referencePanel").style.display = "none"
+    }
+</script>
+
+<div id="referencePanel">
+    <h2>参考面板</h2>
+    <blockquote>
+        注：依照NGA 24有效词条标准圣遗物模型，不适用于追求极限练度
+    </blockquote>
+    <img src="http://www.liaobiao.top/Referenc/{{@roleName}}.png" onerror="imgError();">
+</div>
+
 <div class="logo">
     <span style="font-size: 14px">NGA-Wiki-Plugin</span>
 </div>
