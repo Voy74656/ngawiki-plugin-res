@@ -2,3 +2,5 @@
 tool/**
 !tool/wikiupdater.js
 !tool/README.md
+logs/**
+node_modules/**
