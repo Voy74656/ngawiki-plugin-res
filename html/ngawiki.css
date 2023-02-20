@@ -87,16 +87,14 @@ blockquote>li{
   color: var(--cc-text);
   line-height: 24px;
   text-justify: distribute;
-  padding-left: 15px;
-  margin-left: 15px;
+  padding-right: 15px;
 }
 
 li {
   line-height: 24px;
   color:var(--cc-text);
   text-justify: distribute;
-  padding-left: 15px;
-  margin-left: 15px;
+  padding-right: 15px;
 }
 
 ul {
