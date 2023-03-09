@@ -170,7 +170,7 @@ class ngaWikiUpdater {
         this.wait(1500);
         console.log(`${url} done!`);
       });
-
+      writeFileSync(this.verFile, this.info.ts, "utf8");
       writeFileSync(this.changeLogFile, this.info.changelog, "utf8");
     } else {
       console.log("no update");

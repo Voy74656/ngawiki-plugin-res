@@ -10,5 +10,6 @@ npm init -y
 npm install fs puppeteer -m
 node wikiupdater.js
 ```
+
 默认下载地址为`./md/{{@roleName}}.md`
 下载结束后，手动粘贴至`../markdown/`，进行人工检查并合入
